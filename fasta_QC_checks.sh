@@ -26,7 +26,16 @@ do
 	echo >> $NAME
 	echo  "First three Lines" >>$NAME
 	echo  "------------------">> $NAME
-	echo $(head -n 3 $f)>> $NAME
+	echo $(head -3 $f)>> $NAME
 	echo >>$NAME
-	
+	echo "Last three lines:">> $NAME
+	echo "------------------" >> $NAME
+	echo $(tail -3 $f)>> $NAME
+	echo >> $NAME 
+	echo "number of sequences: "$(grep -c "^>" $f) >> $NAME
+	echo >> $NAME
+	echo "Sequence identifier lines (sorted)" >> $NAME
+	echo " place holder for when I figure out how to do this" >> $NAME
+	 
+		
 done
