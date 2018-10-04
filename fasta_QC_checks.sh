@@ -21,4 +21,12 @@ do
 	echo >> $NAME
 	echo "Output for"$f >> $NAME
 	echo >> $NAME
+	set -- $(du -h $f)
+	echo "Size: "$1 >> $NAME
+	echo >> $NAME
+	echo  "First three Lines" >>$NAME
+	echo  "------------------">> $NAME
+	echo $(head -n 3 $f)>> $NAME
+	echo >>$NAME
+	
 done
