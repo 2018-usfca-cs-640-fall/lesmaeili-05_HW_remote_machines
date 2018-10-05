@@ -33,6 +33,7 @@ do
 	echo number of sequences\: "$(grep -c "^>" "$f")"
 	echo
 	echo "Sequence identifier lines (sorted)"
+        grep  ">" $f  | sort
 	echo " place holder for when I figure out how to do this"
 done
 
