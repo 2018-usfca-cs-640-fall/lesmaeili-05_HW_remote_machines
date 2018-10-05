@@ -1,4 +1,4 @@
-!/bin/bash
+
 Leila Esmaeili
 lesmaeili@dons.usfca.edu
 HW5: Thoughts on Output 
