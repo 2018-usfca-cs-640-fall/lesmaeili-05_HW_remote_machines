@@ -3,8 +3,7 @@
 # lesmaeili@dons.usfca.edu
 # HW5
 
-DATE=`date +%Y-%m-%d`
-echo "Output from preliminary quality control checks on selected fasta files" >> $NAME
+echo "Output from preliminary quality control checks on selected fasta files"
 date # Creates the Date
 echo # Creates a blank line
 echo "Output for each fasta includes:"
@@ -24,16 +23,15 @@ do
 	echo
 	echo "First three Lines"
 	echo "------------------"
-	head -3 $f
+	head -3"$f"
 	echo
 	echo "Last three lines:"
 	echo "------------------"
-	tail -3 $f
+	tail -3 "$f"
 	echo
-	echo number of sequences\: "$(grep -c "^>" "$f")"
+	echo number of sequences':' "$(grep -c "^>" "$f")"
 	echo
 	echo "Sequence identifier lines (sorted)"
-        grep  ">" $f  | sort
 	echo " place holder for when I figure out how to do this"
 done
 
