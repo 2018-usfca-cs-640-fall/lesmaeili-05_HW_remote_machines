@@ -23,15 +23,15 @@ do
 	echo
 	echo "First three Lines"
 	echo "------------------"
-	head -3"$f"
+	head -3 "$f"
 	echo
 	echo "Last three lines:"
 	echo "------------------"
 	tail -3 "$f"
 	echo
 	echo number of sequences':' "$(grep -c "^>" "$f")"
-	echo
-	echo "Sequence identifier lines (sorted)"
-	echo " place holder for when I figure out how to do this"
+	echo grep ">" "$f" | sort 
+	
 done
 
+ 
